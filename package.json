@@ -1,0 +1,30 @@
+{
+  "name": "zorderstest",
+  "version": "1.0.0",
+  "description": "A simple CAP FIORI project for working with orders and items.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "[development]": {
+          "kind": "sqlite",
+          "credentials": {
+            "url": "zordertest.sqlite"
+          }
+        }
+      }
+    }
+  }
+}
