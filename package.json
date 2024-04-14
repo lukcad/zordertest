@@ -10,10 +10,12 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-orders": "cds watch --open orders/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -26,5 +28,9 @@
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/orders",
+    "app/orders"
+  ]
 }
